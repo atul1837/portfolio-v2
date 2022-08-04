@@ -22,6 +22,12 @@ const StyledJobsSection = styled.section`
       min-height: 340px;
     }
   }
+
+  .job-description {
+    a {
+      ${({ theme }) => theme.mixins.inlineLink};
+    }
+  }
 `;
 
 const StyledTabList = styled.div`
@@ -296,7 +302,7 @@ const Jobs = () => {
 
                     <p className="range">{range}</p>
 
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <div className="job-description" dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>
                 </CSSTransition>
               );
