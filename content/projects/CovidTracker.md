@@ -1,7 +1,6 @@
 ---
 date: '2020'
 title: 'Covid Tracker'
-cover: './covid.jpg'
 github: 'https://github.com/atul1837/covid-tracker'
 external: 'https://atul1837.github.io/covid/'
 tech:
